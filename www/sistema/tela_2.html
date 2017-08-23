@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html><!-- InstanceBegin template="/Templates/PRINCIPAL.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>PROGRAMUNDI</title>
+<!-- InstanceEndEditable -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/chosen.css">
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/chosen.jquery.js" type="text/javascript"></script>
+<script src="../js/important.js"></script>
+<script src="../js/app.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<div class="menu_super">
+  <div onClick="btn_modal(1);" style="display: inline-block;margin: 13px 13px 0 0;float: right;"> <div class="icon_settins" ></div> </div>
+</div>
+<div class="contener_p">
+<!-- InstanceBeginEditable name="CONTEUDO" -->
+<div class="menu_empresa">
+<div onClick="menuselecioneemprecardapio(1);" id="menu_cardapio_1" class="col-xs-4 ativo">CARDÁPIO</div>
+<div onClick="menuselecioneemprecardapio(2);" id="menu_cardapio_2" class="col-xs-4">INFORMAÇÕES</div>
+<div onClick="menuselecioneemprecardapio(3);" id="menu_cardapio_3" class="col-xs-4">AVALIAÇÕES</div>
+<div class="brack"></div>
+<div id="list_prods"></div>
+</div>
+<script>list_prodds();</script>
+<!-- InstanceEndEditable -->
+</div>
+<div class="rodape">
+<div class="col-xs-4 part_rodap" onClick="direcione('1');">
+	<div class="vertical_alinha">
+		<div class="icon_pesquisa"></div>
+    	<p>Buscar</p>
+    </div>
+</div>
+<div class="col-xs-4 part_rodap">
+	<div class="vertical_alinha">
+		<div class="icon_pedidos"></div>
+    	<p>Pedidos</p>
+    </div>
+</div>
+<div class="col-xs-4 part_rodap">
+	<div class="vertical_alinha">
+		<div class="icon_perfil"></div>
+    	<p>Perfil</p>
+    </div>
+</div>
+</div>
+<!-- InstanceBeginEditable name="MODALS_SCRIPTS" -->
+<div id="modal_01" class="modal fade" role="dialog" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Filtros e Organização</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label for="txtMovieTitle">Organizar Empresas</label>
+              <select id="" class="form-control">
+              	<option>Mais Relevantes</option>
+                <option>Mais Próximos</option>
+                <option>Menor Preço</option>
+                <option>Menor Tempo De Entrega</option>
+                <option>Avaliação Da Comida Relevantes</option>                
+              </select>
+            </div>
+          </div>
+          <div class="divisoria_15"></div>
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label for="txtMovieTitle">Opções de entrega</label>
+              <select id="" class="form-control">
+              	<option>Todos</option>
+                <option>Entrega Grátis</option>
+                <option>Retirar Na Loja</option>                                
+              </select>
+            </div>
+          </div>
+          <div class="divisoria_15"></div>
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label for="txtMovieTitle">Opções de Pagamento</label>
+              <select multiple id="listoptionpagto" class="form-control">
+              	<optgroup label="Vale Refeição">
+                <option>Alelo Refeição / Visa Vale (cartão)</option>
+                <option>Cooper Card (cartão)</option>  
+                </optgroup>  
+                <optgroup label="Cartão Online">
+                <option>Alelo Refeição / Visa Vale (cartão)</option>
+                <option>Cooper Card (cartão)</option>  
+                </optgroup>  
+                <optgroup label="Cartão Offline">
+                <option>Alelo Refeição / Visa Vale (cartão)</option>
+                <option>Cooper Card (cartão)</option>  
+                </optgroup>   
+                <optgroup label="Outras Formas">
+                <option>Cheque</option>
+                <option>Dinheiro</option>  
+                </optgroup>                                        
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col-lg-12">            
+            <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">CANCELAR</button>
+            <button type="button" id="" onclick="();" class="btn btn-primary btn-xs">APLICAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>
